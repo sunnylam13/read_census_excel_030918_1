@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #! python3
-# ! /usr/local/Cellar/python3/3.6.1
+# ! /usr/local/Cellar/python3/3.6.2
 
 # USAGE
 # python3 read_census_excel_030918_1.py
@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.DEBUG, format=" %(asctime)s - %(levelname)s - 
 print('Opening workbook...')
 
 wb = openpyxl.load_workbook('censuspopdata.xlsx')
-sheet = wb['Population By Census Tract']
+sheet = wb['Population by Census Tract']
 
 countyData = {}
 
