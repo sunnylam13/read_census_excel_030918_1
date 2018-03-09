@@ -4,7 +4,7 @@ except ImportError:
 	from distutils.core import setup
 
 config = {
-	'description': 'My Project',
+	'description': 'A program that goes through census data spreadsheets row by row and tallies up the population numbers.  It also calculates the statistics for each county.',
 	'author': 'Sunny Lam',
 	'url': 'https://github.com/sunnylam13/read_census_excel_030918_1',
 	'download_url': 'https://github.com/sunnylam13/read_census_excel_030918_1',
