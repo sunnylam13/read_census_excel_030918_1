@@ -30,3 +30,33 @@ if it was stored in `countyData`
 	countyData[state abbrev][county]['tracts']
 	countyData[state abbrev][county]['pop']
 
+these rows do the calculation work
+
+	# each row represents one census tract, so increment by 1
+	countyData[state][county]['tracts'] += 1
+
+	# increase the county pop by the pop in this census tract
+	countyData[state][county]['pop'] += int(pop)
+
+WARNING:  you can't add a county dict as the value for a state abbrev key name until the key already exists in `countyData`...
+
+	# make sure the key for this state exists
+	countyData.setdefault(state,{})
+
+EXAMPLE:  
+
+	countyData['AK']['Anchorage']['tracts'] += 1 will cause an error if the 'AK' key doesn't exist
+
+to make sure the state key name is in your data you need to call the `setdefault()` method to set a value if one doesn't already exist for `state`...
+
+on the same note...
+
+each of the `countyData` dicts for each state needs its own dict as the value of each county key name...
+
+in turn each of *those* dicts needs keys `tracts` and `pop`...  that start with integer value `0`...
+
+	# make sure the key for this county in this state exists
+	countyData[state].setdefault(county,{'tracts':0,'pop':0})
+
+
+
