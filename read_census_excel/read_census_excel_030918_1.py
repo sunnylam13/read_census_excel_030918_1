@@ -3,6 +3,9 @@
 #! python3
 # ! /usr/local/Cellar/python3/3.6.1
 
+# USAGE
+# python3 read_census_excel_030918_1.py
+
 import openpyxl, pprint
 import logging
 logging.basicConfig(level=logging.DEBUG, format=" %(asctime)s - %(levelname)s - %(message)s")

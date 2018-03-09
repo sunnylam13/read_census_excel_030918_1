@@ -24,3 +24,7 @@ A program that goes through census data spreadsheets row by row and tallies up t
 
 	read_census_excel/censuspopdata.xlsx
 
+## Execution
+
+	python3 read_census_excel_030918_1.py
+
