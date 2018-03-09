@@ -58,5 +58,20 @@ in turn each of *those* dicts needs keys `tracts` and `pop`...  that start with 
 	# make sure the key for this county in this state exists
 	countyData[state].setdefault(county,{'tracts':0,'pop':0})
 
+## Friday, March 9, 2018 6:36 PM
+
+Ran with an error:
+
+	MacBook-Air:read_census_excel sunnyair$ clear
+	MacBook-Air:read_census_excel sunnyair$ python3 read_census_excel_030918_1.py
+	Opening workbook...
+	Traceback (most recent call last):
+	  File "read_census_excel_030918_1.py", line 14, in <module>
+	    sheet = wb['Population By Census Tract']
+	  File "/usr/local/lib/python3.6/site-packages/openpyxl/workbook/workbook.py", line 247, in __getitem__
+	    raise KeyError("Worksheet {0} does not exist.".format(key))
+	KeyError: 'Worksheet Population By Census Tract does not exist.'
+	MacBook-Air:read_census_excel sunnyair$
+
 
 
