@@ -90,5 +90,17 @@ Except when I run it in the interpreter it works fine:
 	'01001020100'
 	>>>
 
+## Friday, March 9, 2018 9:37 PM
 
+`pprint.pformat()` creates a string that's also formatted as valid Python code...
+
+	resultFile = open('census2010.py','w')
+
+results in you creating a Python program from a Py program...
+
+also lets you import it like any other Python module...
+
+`read_census_excel_030918_1.py` only had to be used once as throwaway code...
+
+once the results are saved to `census2010.py`, you just `import census2010`...
 

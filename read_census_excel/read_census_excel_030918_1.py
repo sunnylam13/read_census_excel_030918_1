@@ -18,7 +18,7 @@ sheet = wb['Population by Census Tract']
 
 countyData = {}
 
-# TODO:  fill in countyData with each county's population and tracts
+# fill in countyData with each county's population and tracts
 
 print('Reading rows...')
 
@@ -45,5 +45,12 @@ for row in range(2,sheet.max_row + 1):
 	countyData[state][county]['pop'] += int(pop)
 	logging.debug('Current value of population is: %i' % (countyData[state][county]['pop']))
 
-# TODO:  open a new text file and write the contents of countyData to it
+# open a new text file and write the contents of countyData to it
+
+print('Writing results...')
+
+resultFile = open('census2010.py','w')
+resultFile.write('allData = ' + pprint.pformat(countyData))
+resultFile.close()
+print('Done')
 
