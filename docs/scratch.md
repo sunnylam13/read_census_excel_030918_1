@@ -104,3 +104,14 @@ also lets you import it like any other Python module...
 
 once the results are saved to `census2010.py`, you just `import census2010`...
 
+	>>> import os
+	>>> import census2010
+	>>> census2010.allData['AK']['Anchorage']
+	{'pop': 291826, 'tracts': 55}
+	>>> anchoragePop = census2010.allData['AK']['Anchorage']['pop']
+	>>> print('The 2010 population of Anchorage was ' + str(anchoragePop))
+	The 2010 population of Anchorage was 291826
+	>>>
+
+ABSP:  460
+
