@@ -115,3 +115,21 @@ once the results are saved to `census2010.py`, you just `import census2010`...
 
 ABSP:  460
 
+## Friday, March 9, 2018 9:46 PM
+
+Ideas for Similar Programs...
+
+in business, spreadsheets can become bloated and hard to use...
+
+a program that can analyze a sheet is handy...
+
+what could it do?
+
+* compare data across multiple rows
+
+* open multiple Excel files and compare data between spreadsheets (assuming the structures are similar)
+
+* check whether a spreadsheet has blank rows or bad data in any cells and give a warning
+
+* read data from a sheet and use it as input for Python programs...
+
